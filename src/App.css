@@ -6,14 +6,20 @@
 }
 
 .App-logo {
-  height: 200vmin;
+  height: 170vmin;
   pointer-events: none;
-  margin-top: -10vh;
+  margin-top: 0vh;
+}
+
+@font-face {
+  font-family: "white dream";
+  src: url(/white_dream/WhiteDreamPERSONALUSEONLY-Regular.otf);
 }
 
 a {
   text-decoration: none;
   color: #f3dd92;
+  font-family: "white dream";
 }
 
 @media (prefers-reduced-motion: no-preference) {
