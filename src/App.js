@@ -1,4 +1,5 @@
-import starsign from './starsign_1.svg';
+import starsign from './starsign_gradient.svg';
+import vrouw from './waarzegger.png'
 //import starsign2 from './starsign.svg';
 
 import './App.css';
@@ -19,6 +20,8 @@ function App() {
           <h1>Generate a new quote</h1>
           </a>      
         <img src= {starsign} className="App-logo" alt="Starsigns" />
+        <img src= {vrouw} className="vrouw" alt='Vrouw' />
+
         {/* // <img src= {starsign2} className="App-logo" alt='Starsigns'/> */}
       </header>
     </div>

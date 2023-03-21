@@ -11,6 +11,11 @@
   margin-top: 0vh;
 }
 
+.vrouw {
+  position: absolute;
+  max-height: 100vh;
+  margin-bottom: 75vh;
+}
 @font-face {
   font-family: "white dream";
   src: url(/white_dream/WhiteDreamPERSONALUSEONLY-Regular.otf);
