@@ -13,14 +13,19 @@ fetch("https://type.fit/api/quotes")
   });
 
 function App() {
+  const [data]
+
+  }
   return (
     <div className="App">
-      <header className="App-header">
-      <a href=''>
-          <h1>Generate a new quote</h1>
-          </a>      
+      <header className="App-header">  
         <img src= {starsign} className="App-logo" alt="Starsigns" />
         <img src= {vrouw} className="vrouw" alt='Vrouw' />
+        <div className='divje'>
+        <a onClick={quote} href=''>
+          <h1>Generate a new quote</h1>
+          </a>     
+        </div>
 
         {/* // <img src= {starsign2} className="App-logo" alt='Starsigns'/> */}
       </header>

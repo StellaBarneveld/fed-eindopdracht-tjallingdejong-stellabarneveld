@@ -13,18 +13,29 @@
 
 .vrouw {
   position: absolute;
-  max-height: 100vh;
-  margin-bottom: 75vh;
+  max-height: 125vh;
+  margin-bottom: 85vh;
 }
 @font-face {
   font-family: "white dream";
   src: url(/white_dream/WhiteDreamPERSONALUSEONLY-Regular.otf);
 }
 
+.divje {
+  /* background-color: red; */
+  height: 150px;
+  width: 150px;
+  position: absolute;
+  border-radius: 50%;
+  margin-bottom: 50vh;
+}
+
 a {
   text-decoration: none;
-  color: #f3dd92;
+  color: #be9739;
   font-family: "white dream";
+  z-index: 1;
+  font-size: 25px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
