@@ -9,7 +9,7 @@ fetch("https://type.fit/api/quotes")
     return response.json();
   })
   .then(function(data) {
-    // console.log(data);
+    console.log(data);
   });
 
   fetch("image.json")
@@ -21,9 +21,7 @@ fetch("https://type.fit/api/quotes")
   });
 
 function App() {
-//   const [data]
 
-//   }
   return (
     <div className="App">
       <header className="App-header">  
@@ -34,8 +32,6 @@ function App() {
           <h1>Generate a new quote</h1>
           </a>     
         </div>
-
-        {/* // <img src= {starsign2} className="App-logo" alt='Starsigns'/> */}
       </header>
     </div>
   );
