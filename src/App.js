@@ -9,15 +9,15 @@ fetch("https://type.fit/api/quotes")
     return response.json();
   })
   .then(function(data) {
-    console.log(data);
+    // console.log(data);
   });
 
-  fetch("/image.json")
+  fetch("image.json")
   .then(function(response) {
     return response.json();
   })
   .then(function(data) {
-    console.log(data);
+    console.log(data.images[Math.random(0)*25])
   });
 
 function App() {
