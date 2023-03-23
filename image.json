@@ -1,53 +1,29 @@
 {
     "images": [
-        {"1": "/api-images/117393.jpeg"},
-
-        {"2": "/api-images/185971.jpeg"},
-
-        {"3": "/api-images/1982041-bigthumbnail.jpeg"},
-
-        {"4": "/api-images/2-nature.jpeg"},
-
-        {"5": "/api-images/359702.jpeg"},
-
-        {"6": "/api-images/360_F_388298845_T1URO6DKys4Aj8abLDRua2ZH72FJ7pMQ.jpeg"},
-
-        {"7": "/api-images/360_F_577642189_qDkA4BzLMQYgiLau2mxWLvlbg7SyfP2l.jpeg"},
-
-        {"8": "/api-images/85341.jpeg"},
-
-        {"9": "/api-images/Amazing-nature-beautiful-scenery-Stock-Photo-13.jpeg"},
-
-        {"10": "/api-images/breathtaking-nature-lakes-austria-hallstatt-impressive-village-lake-mountains-75601442.jpeg"},
-
-        {"11": "/api-images/desktop-wallpaper-awesome-nature-breathtaking-nature.jpeg"},
-
-        {"12": "/api-images/desktop-wallpaper-breathtaking-the-best-in-2018-nature.jpeg"},
-
-        {"13": "/api-images/desktop-wallpaper-motivational-and-inspirational-backgrounds-music-for-videos-motivation-background-thumbnail.jpeg"},
-
-        {"14": "/api-images/f5235fe86b444de575a9817f31c7d0eb.jpeg"},
-
-        {"15": "/api-images/GettyImages-138160482_doc.jpg.webp"},
-
-        {"16": "/api-images/images.jpeg"},
-
-        {"17": "/api-images/images1.jpeg"},
-
-        {"18": "/api-images/images_2.jpeg"},
-
-        {"19": "/api-images/little-girl-near-lake-day-time-with-amazing-nature_109800-17483.webp"},
-
-        {"20": "/api-images/lovepik-inspirational-background-image_500859051.jpeg"},
-
-        {"21": "/api-images/nature-quotes-landscape-1648265299.jpeg"},
-
-        {"22": "/api-images/photo-1560111458-b9bbc3d824f7.jpeg"},
-
-        {"23": "/api-images/shutterstock_750703924-800x500.jpeg"},
-
-        {"24": "/api-images/sun-sea-saadiyat-04.webp"},
-
-        {"25": "/api-images/wandern_sommer_olpererhuette_foto_dominic_ebenbichler__29_.jpeg"}
+        "/api-images/117393.jpeg",
+        "/api-images/185971.jpeg",
+        "/api-images/1982041-bigthumbnail.jpeg",
+        "/api-images/2-nature.jpeg",
+        "/api-images/359702.jpeg",
+        "/api-images/360_F_388298845_T1URO6DKys4Aj8abLDRua2ZH72FJ7pMQ.jpeg",
+        "/api-images/360_F_577642189_qDkA4BzLMQYgiLau2mxWLvlbg7SyfP2l.jpeg",
+        "/api-images/85341.jpeg",
+        "/api-images/Amazing-nature-beautiful-scenery-Stock-Photo-13.jpeg",
+        "/api-images/breathtaking-nature-lakes-austria-hallstatt-impressive-village-lake-mountains-75601442.jpeg",
+        "/api-images/desktop-wallpaper-awesome-nature-breathtaking-nature.jpeg",
+        "/api-images/desktop-wallpaper-breathtaking-the-best-in-2018-nature.jpeg",
+        "/api-images/desktop-wallpaper-motivational-and-inspirational-backgrounds-music-for-videos-motivation-background-thumbnail.jpeg",
+        "/api-images/f5235fe86b444de575a9817f31c7d0eb.jpeg",
+        "/api-images/GettyImages-138160482_doc.jpg.webp",
+        "/api-images/images.jpeg",
+        "/api-images/images1.jpeg",
+        "/api-images/images_2.jpeg",
+        "/api-images/little-girl-near-lake-day-time-with-amazing-nature_109800-17483.webp",
+        "/api-images/lovepik-inspirational-background-image_500859051.jpeg",
+        "/api-images/nature-quotes-landscape-1648265299.jpeg",
+        "/api-images/photo-1560111458-b9bbc3d824f7.jpeg",
+        "/api-images/shutterstock_750703924-800x500.jpeg",
+        "/api-images/sun-sea-saadiyat-04.webp",
+        "/api-images/wandern_sommer_olpererhuette_foto_dominic_ebenbichler__29_.jpeg"
     ]
 }
