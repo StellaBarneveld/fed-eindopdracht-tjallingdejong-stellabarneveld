@@ -1,8 +1,7 @@
 import starsign from './starsign_gradient.svg';
 import vrouw from './waarzegger.png'
-//import starsign2 from './starsign.svg';
-
 import './App.css';
+import randomAlles from './quote';
 
 fetch("https://type.fit/api/quotes")
   .then(function(response) {
@@ -20,6 +19,8 @@ fetch("https://type.fit/api/quotes")
     console.log(data.images[Math.random(0)*25])
   });
 
+  console.log(randomAlles);
+
 function App() {
 
   return (
@@ -30,6 +31,7 @@ function App() {
         <div className='divje'>
         <a  href=''>
           <h1>Generate a new quote</h1>
+          <randomAlles/>
           </a>     
         </div>
       </header>
