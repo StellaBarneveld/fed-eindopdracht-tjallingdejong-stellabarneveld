@@ -27,9 +27,19 @@ function RandomQuote(){
      
     return(
         <>
-        <a href="" onClick={generateQuote}> 
-            <h1 >Generate a new quote</h1>
-        </a>
+        { !quote &&
+            <a href="" onClick={generateQuote}> 
+                <h1 >Generate a new quote</h1>
+            </a>
+        }
+        { quote &&
+        <div className='Rood'>
+            <a href="" onClick={generateQuote}> 
+            <p> HUppeldepup</p>
+            </a>
+          
+        </div>
+        }
  
         <div>
             {quote}
