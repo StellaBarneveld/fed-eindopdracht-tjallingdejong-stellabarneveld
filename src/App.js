@@ -25,7 +25,6 @@ function App() {
         <img src= {starsign} className="App-logo" alt="Starsigns" />
         <img src= {vrouw} className="vrouw" alt='Vrouw' />
         <div className='Rood'>
-        <RandomQuote />
           
         </div>
 
