@@ -3,25 +3,40 @@ import React, {useEffect, useState} from 'react'
 
 
 
-function RandomAlles(){
-    const [text, setText] = useState()
+function RandomQuote(){
 
-    useEffect(() => {
+      
+    const [quote, setQuote] = useState();
+
+    const generateQuote = (e) => {
+    
+        e.preventDefault();
+
+        console.log("sdfsdfdf");
+
         fetch('https://type.fit/api/quotes')
         .then(results => results.json())
         .then(data => {
-            console.log(data.length)
+            console.log(data)
             let randomNumber = Math.round(Math.random() * (data.length - 0) + 0);
-            setText(data[randomNumber].text)
-        })
-    }, [])
+            setQuote(data[randomNumber].text)
+        });
 
+    }
+  
+     
     return(
+        <>
+        <a href="" onClick={generateQuote}> 
+            <h1 >Generate a new quote</h1>
+        </a>
+ 
         <div>
-            {text}
+            {quote}
         </div>
+        </>
     )
     
-}
+};
 
-export default RandomAlles
+export default RandomQuote;
