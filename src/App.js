@@ -1,4 +1,3 @@
-import React, {useEffect, useState} from 'react';
 import starsign from './starsign_gradient.svg';
 import vrouw from './waarzegger.png'
 import './App.css';
@@ -26,7 +25,7 @@ function App() {
         <img src= {starsign} className="App-logo" alt="Starsigns" />
         <img src= {vrouw} className="vrouw" alt='Vrouw' />
         <div className='Rood'>
-          
+        <RandomQuote />
           
         </div>
 
