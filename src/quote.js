@@ -31,7 +31,7 @@ function RandomQuote(){
             <h1 >Generate a new quote</h1>
         </a>
  
-        <div>
+        <div className='quote'>
             {quote}
         </div>
         </>
