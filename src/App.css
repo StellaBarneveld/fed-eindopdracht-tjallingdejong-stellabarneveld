@@ -11,6 +11,13 @@
   margin-top: 0vh;
 }
 
+.Rood {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
 .vrouw {
   position: absolute;
   max-height: 125vh;

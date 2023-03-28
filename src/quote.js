@@ -1,5 +1,7 @@
 
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react'
+
+
 
 function RandomAlles(){
     const [text, setText] = useState()
@@ -8,7 +10,9 @@ function RandomAlles(){
         fetch('https://type.fit/api/quotes')
         .then(results => results.json())
         .then(data => {
-            setText(data[0].text)
+            console.log(data.length)
+            let randomNumber = Math.round(Math.random() * (data.length - 0) + 0);
+            setText(data[randomNumber].text)
         })
     }, [])
 
