@@ -3,21 +3,10 @@ import vrouw from './waarzegger.png'
 import './App.css';
 import RandomQuote from './quote';
 
-  fetch("image.json")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    console.log(data.images[Math.random(0)*25])
-  });
-  
 
   
 
 function App() {
-  
-
-
 
   return (
     <div className="App">
