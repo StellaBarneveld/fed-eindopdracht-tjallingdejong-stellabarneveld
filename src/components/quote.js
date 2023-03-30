@@ -1,11 +1,8 @@
 
 import React, {useEffect, useState} from 'react'
 
-
-
 function RandomQuote(){
 
-      
     const [quote, setQuote] = useState();
 
     const generateQuote = (e) => {
@@ -24,7 +21,6 @@ function RandomQuote(){
 
     }
   
-     
     return(
         <>
         { !quote &&
