@@ -3,9 +3,6 @@ import vrouw from './waarzegger.png'
 import './App.css';
 import RandomQuote from './quote';
 
-
-  
-
 function App() {
 
   return (
@@ -17,20 +14,15 @@ function App() {
           
         </div>
 
-
         <div className='divje'>
        
-          
           <RandomQuote />
          
-        
         </div>
-
 
       </header>
     </div>
   );
 }
-
 
 export default App;
