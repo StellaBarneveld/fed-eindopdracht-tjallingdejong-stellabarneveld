@@ -43,3 +43,12 @@ if (storage == null) {
 else {
     localStorage.removeItem("favItem' + (props.i));
 }
+
+const [favorites, setFavorites] = useState ([] as Array<number>);
+const getArray = JSON.parse(localStorage.getItem('favorites') || 'O');
+
+useEffect(() => {
+    if (getArray !== 0) {
+        setFavorites([...getArray])
+    }
+}, [])
