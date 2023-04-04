@@ -52,8 +52,8 @@ function RandomQuote(){
         }
  
         <div className='quote'>
-            {quote}
-            <img src={img} />
+            <p className='tekst'>{quote}</p>
+            <img className='image' src={img} />
         </div>
         </>
     )

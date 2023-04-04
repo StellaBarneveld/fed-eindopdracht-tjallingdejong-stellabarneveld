@@ -19,9 +19,11 @@ function App() {
 
 
         <div className='divje'>
+
        
           
           <RandomQuote />
+        
          
         
         </div>
