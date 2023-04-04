@@ -1,0 +1,30 @@
+.favorites {
+  background-image: url(/background.svg);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+  height: 100vh;
+}
+
+.openBook {
+  height: 500px;
+  position: relative;
+  margin-top: 100px;
+}
+
+.home-button {
+  text-decoration: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.home-button {
+  color: #be9739;
+  font-family: "white dream";
+  font-size: 40px;
+}
+
+.home-button:hover {
+  transform: scale(50px);
+}
