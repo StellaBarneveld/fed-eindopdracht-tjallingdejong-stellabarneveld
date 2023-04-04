@@ -1,11 +1,8 @@
 
 import React, {useEffect, useState} from 'react'
 
-
-
 function RandomQuote(){
 
-      
     const [quote, setQuote] = useState();
     const [img, setImg] = useState();
 
@@ -33,8 +30,6 @@ function RandomQuote(){
 
     }
 
-  
-     
     return(
         <>
         { !quote &&
