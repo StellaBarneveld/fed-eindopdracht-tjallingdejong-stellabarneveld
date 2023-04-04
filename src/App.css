@@ -7,6 +7,10 @@
   height: 100vh;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App-logo {
   height: 170vmin;
   pointer-events: none;
@@ -47,6 +51,7 @@ h1 {
   font-family: "white dream";
   z-index: 1;
   font-size: 50px;
+
   /* position: absolute;
   left: 140px;
   top: 50px; */
@@ -59,6 +64,7 @@ h1 {
 
 .divje {
   /* background-color: red; */
+  text-decoration: none;
   height: 150px;
   /* width: 150px; */
   position: absolute;
@@ -66,6 +72,11 @@ h1 {
   left: 34%;
   border-radius: 50%;
   margin-bottom: 50vh;
+}
+
+.divje h1 {
+  margin: 0;
+  padding: 0;
 }
 
 @media (prefers-reduced-motion: no-preference) {
