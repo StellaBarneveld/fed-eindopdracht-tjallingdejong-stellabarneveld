@@ -195,3 +195,54 @@ a p:hover {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+.favQuote {
+  position: relative;
+  z-index: 15;
+  top: 0;
+  left: 0;
+  font-family: "white dream";
+  margin-left: 420px;
+  margin-top: -13px;
+  transition: all 0.3s ease-in-out;
+  /* max-height: 75px; */
+}
+
+#favImg {
+  /* position: relative; */
+  width: 150px;
+  top: 0;
+  border-radius: 15px;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  margin-top: 20px;
+}
+
+#favTekst {
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  font-size: 10px;
+  z-index: 12;
+  color: white;
+  display: block;
+  margin: auto auto;
+  text-align: center;
+  margin-left: 25px;
+  margin-top: 40px;
+}
+
+.scaleBoth :hover {
+  transform: scale(6);
+  cursor: pointer;
+}
+
+.scaleBoth:hover {
+  transform: scale(4);
+  cursor: pointer;
+  position: relative;
+  display: flex;
+}

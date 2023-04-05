@@ -1,6 +1,7 @@
 
 import React, {useEffect, useState} from 'react'
 
+
 function RandomQuote(){
 
     const [quote, setQuote] = useState();
@@ -13,14 +14,25 @@ function RandomQuote(){
         }
     }, []);
 
+
     const addFavorites = (e) => {
         let fav = {
             quote: quote,
             img: img
         };
 
+        if (favorites.length >= 4){
+            
+
+            alert("You reached the maximum amount of favorites!");
+        }
+           
+       else {
         setFavorites([...favorites, fav]);
-    }
+                
+}
+};
+
 
     // Use the useEffect hook, to fire a function that saves our favorites state
     // to the localStorage.
@@ -28,9 +40,14 @@ function RandomQuote(){
         if(favorites.length) {
             localStorage.setItem('favorites', JSON.stringify(favorites));
         }
+        
     }, [favorites]);
 
+    
+
     const generateQuote = (e) => {
+
+        console.log(favorites);
     
         e.preventDefault();
 
@@ -70,13 +87,16 @@ function RandomQuote(){
         </div>
         }
  
-        { quote &&
+        { quote && 
         <div className='quote' style={{backgroundImage: "url(" + img + ")"}}>
             <button onClick={addFavorites}>add to favorites</button>
             <p className='tekst'>{quote}</p>
             {/* <img className='image' src={img} /> */}
         </div>
         }
+
+        
+        
         </>
     )
     
