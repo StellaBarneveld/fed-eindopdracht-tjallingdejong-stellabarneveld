@@ -235,14 +235,6 @@ a p:hover {
   margin-top: 40px;
 }
 
-.scaleBoth :hover {
-  transform: scale(6);
-  cursor: pointer;
-}
-
-.scaleBoth:hover {
+.favQuote :hover {
   transform: scale(4);
-  cursor: pointer;
-  position: relative;
-  display: flex;
 }
