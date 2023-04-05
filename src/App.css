@@ -26,17 +26,17 @@ a {
 
 .Volgende {
   position: absolute;
-  top: -110px;
+  top: -100px;
   margin: 0;
   width: 500px;
-  left: -15px;
+  left: -10%;
   text-decoration: none;
   color: #be9739;
   z-index: 2;
   font-family: "white dream";
   font-size: 50px;
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
+  text-shadow: -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff,
+    1px 1px 0 #fff;
 }
 
 .vrouw {
@@ -50,11 +50,20 @@ h1 {
   color: #be9739;
   font-family: "white dream";
   z-index: 1;
-  font-size: 50px;
+  font-size: 55px;
+  text-align: center;
+  position: relative;
+  width: 150px;
+  left: 92%;
+  top: 50%;
+}
 
-  /* position: absolute;
-  left: 140px;
-  top: 50px; */
+a h1:hover {
+  transform: scale(1.1);
+}
+
+a p:hover {
+  transform: scale(1.1);
 }
 
 @font-face {
@@ -118,6 +127,9 @@ h1 {
   font-size: 25px;
   margin: 0;
   background-size: cover;
+  position: relative;
+  top: -10%;
+  left: -2%;
 }
 
 .img {
@@ -142,11 +154,12 @@ h1 {
   width: 100%;
   height: 100%;
   position: relative;
-  top: 0;
   left: 0;
   width: 450px;
   padding-left: 20px;
-  padding-top: 60px;
+  padding-right: 20px;
+  padding-top: 0;
+  padding-bottom: 60px;
 }
 
 .favorites-link {
@@ -163,4 +176,22 @@ h1 {
 
 .favorites-link img:hover {
   transform: rotate(10deg);
+}
+
+.quote button {
+  background-color: #be9739;
+  font-size: 16px;
+  border: none;
+  color: #fff;
+  padding: 15px 32px;
+  text-align: center;
+  position: relative;
+  left: 0px;
+  top: 260px;
+  border-radius: 5px;
+}
+
+.quote button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }

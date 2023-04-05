@@ -15,9 +15,9 @@ function Favorites() {
     <div className="favorites">
         {favs && 
             <div>
-            <h1>favs</h1>
+            <h1>favourites</h1>
             {favs.map((fav, i) => 
-                <div key={i}>
+                <div className="favQuote" key={i}>
                     {fav.quote}
                     {fav.img}
                 </div>

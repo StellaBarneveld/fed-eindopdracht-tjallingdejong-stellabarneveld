@@ -70,13 +70,13 @@ function RandomQuote(){
         </div>
         }
  
-        {/* <div className='quote'> */}
+        { quote &&
         <div className='quote' style={{backgroundImage: "url(" + img + ")"}}>
             <button onClick={addFavorites}>add to favorites</button>
             <p className='tekst'>{quote}</p>
             {/* <img className='image' src={img} /> */}
-            
         </div>
+        }
         </>
     )
     
