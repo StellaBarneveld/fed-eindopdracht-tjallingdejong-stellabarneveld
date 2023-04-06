@@ -227,7 +227,12 @@ a p:hover {
   width: 100px;
   font-size: 10px;
   z-index: 12;
-  color: white;
+  text-decoration: none;
+  color: #fff;
+  text-shadow: -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000,
+    0.5px 0.5px 0 #000;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   display: block;
   margin: auto auto;
   text-align: center;
@@ -235,6 +240,15 @@ a p:hover {
   margin-top: 40px;
 }
 
-.favQuote :hover {
-  transform: scale(4);
+.favQuote:hover #favImg {
+  transform: scale(2);
+  position: relative;
+  margin-left: 380px;
+}
+
+.favQuote:hover #favTekst {
+  transform: scale(2);
+  position: relative;
+  top: 80px;
+  left: 380px;
 }

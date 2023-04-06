@@ -12,10 +12,6 @@ function Favorites() {
       setFavs(JSON.parse(localStorage.getItem('favorites')));
   }, []);
 
-    
-
-    
-
   return (
     <div className="favorites">
         {favs && 
@@ -29,18 +25,14 @@ function Favorites() {
                 </div>    
             )}
             
-            
             </div>
         }
         
-        
-
         <NavLink to={'/'} className="home-button">
             &larr;Go back
         </NavLink>
         
       <img src= {openBook} className="openBook" alt="Book Open" />
-      
       
     </div>
     
