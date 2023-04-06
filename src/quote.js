@@ -2,21 +2,59 @@
 import React, {useEffect, useState} from 'react'
 
 
-
 function RandomQuote(){
 
-      
     const [quote, setQuote] = useState();
     const [img, setImg] = useState();
+    const [favorites, setFavorites] = useState([]);
+
+    useEffect(() => {
+        if(localStorage.getItem('favorites')) {
+            setFavorites(JSON.parse(localStorage.getItem('favorites')));
+        }
+    }, []);
+
+
+    const addFavorites = (e) => {
+        let fav = {
+            quote: quote,
+            img: img
+        };
+
+        if (favorites.length >= 4){
+            
+
+            alert("You reached the maximum amount of favorites!");
+        }
+           
+       else {
+        setFavorites([...favorites, fav]);
+                
+}
+};
+
+
+    // Use the useEffect hook, to fire a function that saves our favorites state
+    // to the localStorage.
+    useEffect(() => {
+        if(favorites.length) {
+            localStorage.setItem('favorites', JSON.stringify(favorites));
+        }
+        
+    }, [favorites]);
+
+    
 
     const generateQuote = (e) => {
+
+        console.log(favorites);
     
         e.preventDefault();
 
         fetch('https://type.fit/api/quotes')
         .then(results => results.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
             let randomNumber = Math.round(Math.random() * (data.length - 0) + 0);
             setQuote(data[randomNumber].text)
 
@@ -25,36 +63,40 @@ function RandomQuote(){
         fetch('image.json')
         .then(results => results.json())
         .then(data => {
-            console.log(data.images)
+            // console.log(data.images)
             let randomNumber = Math.round(Math.random() * (data.images.length - 0) + 0);
             setImg(data.images[randomNumber])
-            console.log(img)
+            // console.log(img)
         });       
 
     }
 
-  
-     
     return(
         <>
         { !quote &&
             <a href="" onClick={generateQuote} > 
-                <h1 >Generate a new quote</h1>
+                <h1 >Generate a quote</h1>
             </a>
         }
         { quote &&
         <div className='Rood'>
-            <a href="" onClick={generateQuote}> 
-            <p> Huppeldepup</p>
+            <a className="Volgende" href="" onClick={generateQuote}> 
+            <p>Generate a new Quote</p>
             </a>
           
         </div>
         }
  
-        <div className='quote'>
-            {quote}
-            <img src={img} />
+        { quote && 
+        <div className='quote' style={{backgroundImage: "url(" + img + ")"}}>
+            <button onClick={addFavorites}>add to favorites</button>
+            <p className='tekst'>{quote}</p>
+            {/* <img className='image' src={img} /> */}
         </div>
+        }
+
+        
+        
         </>
     )
     

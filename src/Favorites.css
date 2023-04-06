@@ -1,0 +1,48 @@
+.favorites {
+  background-image: url(/background.svg);
+  background-repeat: no-repeat;
+  /* background-size: 100%; */
+  background-size: cover;
+  height: 100vh;
+}
+
+.favorites h1 {
+  color: #be9739;
+  font-family: "white dream";
+  font-size: 55px;
+  text-align: center;
+  position: relative;
+  left: 41%;
+  top: 50%;
+  margin-top: 0;
+}
+
+.openBook {
+  height: 750px;
+  position: absolute;
+  margin-top: 0;
+  top: 3%;
+  left: 10%;
+  z-index: 0;
+}
+
+.home-button {
+  text-decoration: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
+
+.home-button {
+  color: #be9739;
+  font-family: "white dream";
+  font-size: 40px;
+}
+
+.home-button:hover {
+  transform: scale(1.1);
+}
+
+.favQuote {
+  z-index: 1;
+}
